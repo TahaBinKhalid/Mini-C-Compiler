@@ -1,0 +1,53 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; 
+        }
+        .code-area {
+            font-family: 'Fira Code', monospace;
+            min-height: 200px;
+            background-color: #1f2937; 
+            color: #f9fafb; 
+            border: 2px solid #4b5563;
+        }
+        .output-box {
+            min-height: 150px;
+            white-space: pre-wrap;
+            word-break: break-all;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            overflow-x: auto;
+        }
+        /* Token Colors */
+        .token { display: inline-block; padding: 2px 6px; margin: 2px; border-radius: 4px; font-size: 0.8rem; font-family: 'Fira Code', monospace; }
+        .token-KEYWORD { background-color: #ef4444; color: white; } 
+        .token-ID { background-color: #3b82f6; color: white; } 
+        .token-INT { background-color: #10b981; color: white; } 
+        .token-STRING { background-color: #92400e; color: white; } 
+        .token-OP { background-color: #f59e0b; color: #1f2937; } 
+        .token-PUNC { background-color: #6b7280; color: white; } 
+        .token-HASH { background-color: #7c3aed; color: white; } 
+        
+        /* Message Colors */
+        .error { background-color: #fee2e2; color: #dc2626; padding: 4px; border-radius: 4px; font-weight: bold; }
+        .success { color: #10b981; font-weight: bold; }
+
+        /* ICG/Assembly Styling */
+        .compiler-code {
+            font-family: 'Fira Code', monospace;
+            color: #0d9488; /* Teal */
+        }
+        .compiler-code .comment {
+            color: #6b7280; /* Gray for comments */
+        }
+        .compiler-code .label {
+            color: #f59e0b; /* Amber for labels */
+            font-weight: bold;
+        }
+        .compiler-code .optimized {
+            color: #f97316; /* Orange for optimized lines */
+            text-decoration: line-through;
+        }
+        .compiler-code .new {
+            color: #4ade80; /* Light Green for new optimized lines */
+        }
